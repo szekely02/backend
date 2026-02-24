@@ -36,7 +36,7 @@ public static class vasarlokEndpoints
         });
 
         // Put /vasarlok/1
-        group.MapPut("/{id}", async (int id, UpdatedvasarlokDto updatedVasarlok, netContext dbContex) =>
+        group.MapPut("/{id}", async (int id, updatevasarlokDto updatedVasarlok, netContext dbContex) =>
         {
             var existingVasarlok = await dbContex.vasarlok.FindAsync(id);
             if (existingVasarlok is null)
