@@ -25,7 +25,7 @@ public static class vasarlokEndpoints
         });
 
         //Post /vasarlok
-        group.MapPost("/", async (createRendelesekDto newVasarlok, netContext dbContext) =>
+        group.MapPost("/", async (createvasarlokDto newVasarlok, netContext dbContext) =>
         {
             Vasarlok vasarlo = newVasarlok.ToEntity();
 
