@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using GameStore.Data;
 using GameStore.Mapping;
 using Microsoft.EntityFrameworkCore;
@@ -17,3 +17,4 @@ public static class GenresEndpoints
         return group;
     }
 }
+*/

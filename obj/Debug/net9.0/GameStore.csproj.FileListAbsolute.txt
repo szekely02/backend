@@ -157,3 +157,4 @@ z:\GameStore\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 z:\GameStore\obj\Debug\net9.0\GameStore.csproj.AssemblyReference.cache
 z:\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cs
 Z:\GameStore\obj\Debug\net9.0\GameStore.csproj.Up2Date
+z:\GameStore\obj\Debug\net9.0\GameStore.sourcelink.json
