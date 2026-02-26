@@ -1,25 +1,20 @@
 using GameStore.Data;
 using GameStore.Endpoints;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connString = builder.Configuration.GetConnectionString("GameStore");
-builder.Services.AddSqlite<GameStoreContext>(connString); 
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-});
+builder.Services.AddDbContext<netContext>(options =>
+    options.UseMySql(connString, ServerVersion.AutoDetect(connString)));
+
 var app = builder.Build();
 
-app.UseCors();
 
-app.MapGamesEndpoints(); 
-app.MapGenresEndpoints();
+
+app.MapRendelesekEndpoints();
+app.MapTermekekEndpoints();
+app.MapVasarlokEndpoints();
 
 await app.MigrateDB();
 
