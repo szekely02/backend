@@ -158,3 +158,5 @@ z:\GameStore\obj\Debug\net9.0\GameStore.csproj.AssemblyReference.cache
 z:\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cs
 Z:\GameStore\obj\Debug\net9.0\GameStore.csproj.Up2Date
 z:\GameStore\obj\Debug\net9.0\GameStore.sourcelink.json
+z:\GameStore\bin\Debug\net9.0\MySqlConnector.dll
+z:\GameStore\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

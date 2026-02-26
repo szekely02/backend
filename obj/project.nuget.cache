@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eY01sp3WFb8=",
+  "dgSpecHash": "WemNJtn6CNU=",
   "success": true,
-  "projectFilePath": "Z:\\GameStore\\GameStore.csproj",
+  "projectFilePath": "z:\\GameStore\\GameStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\szbalazs06\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\szbalazs06\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

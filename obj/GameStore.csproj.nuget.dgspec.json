@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\GameStore\\GameStore.csproj": {}
+    "z:\\GameStore\\GameStore.csproj": {}
   },
   "projects": {
-    "Z:\\GameStore\\GameStore.csproj": {
+    "z:\\GameStore\\GameStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\GameStore\\GameStore.csproj",
+        "projectUniqueName": "z:\\GameStore\\GameStore.csproj",
         "projectName": "GameStore",
-        "projectPath": "Z:\\GameStore\\GameStore.csproj",
+        "projectPath": "z:\\GameStore\\GameStore.csproj",
         "packagesPath": "C:\\Users\\szbalazs06\\.nuget\\packages\\",
-        "outputPath": "Z:\\GameStore\\obj\\",
+        "outputPath": "z:\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
