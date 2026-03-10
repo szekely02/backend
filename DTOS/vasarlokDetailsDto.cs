@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-public record class vasarlokdetailsDto(
+public record class VasarlokdetailsDto(
     string Nev,
     string Email,
     string telefonszam,
