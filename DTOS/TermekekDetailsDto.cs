@@ -8,8 +8,8 @@ public record class termekekdetailsDto(
     string Mufaj,
     DateTime megjelenesi_datum,
     string korhatar_besorolas,
-    int leiras,
-    decimal ar,
-    decimal akcios_ar,
+    string leiras,
+    int ar,
+    int akcios_ar,
     int Raktarkeszlet
 );

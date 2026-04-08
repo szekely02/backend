@@ -15,7 +15,7 @@ public static class termekekEndpoints
         var group = app.MapGroup("termekek").WithParameterValidation();
 
         group.MapGet("/", async (netContext dbContext) =>
-         await dbContext.termekek.Include(termek => termek.Mufaj)
+         await dbContext.termekek
                         .Select(termek => termek.ToTermekekDetailsDto())
                         .AsNoTracking().ToListAsync());
 

@@ -21,10 +21,10 @@ namespace GameStore.Migrations
                 {
                     Rendelesek_ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Vasarlo_ID = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Vasarlo_ID = table.Column<int>(type: "int", nullable: false),
                     termek_ID = table.Column<int>(type: "int", nullable: false),
-                    Rendeles_datuma = table.Column<DateOnly>(type: "date", nullable: false),
+                    
+                    Rendeles_datuma = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     fizetesi_mod = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     szallitasi_mod = table.Column<string>(type: "longtext", nullable: false)
@@ -53,9 +53,10 @@ namespace GameStore.Migrations
                     megjelenesi_datum = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     korhatar_besorolas = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    leiras = table.Column<int>(type: "int", nullable: false),
-                    ar = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
-                    akcios_ar = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    leiras = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ar = table.Column<int>(type: "int", nullable: false),
+                    akcios_ar = table.Column<int>(type: "int", nullable: true),
                     Raktarkeszlet = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

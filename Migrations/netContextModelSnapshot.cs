@@ -30,12 +30,12 @@ namespace GameStore.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Rendelesek_ID"));
 
-                    b.Property<DateOnly>("Rendeles_datuma")
+                    b.Property<DateTime>("Rendeles_datuma")
                         .HasColumnType("date");
 
-                    b.Property<string>("Vasarlo_ID")
+                    b.Property<int>("Vasarlo_ID")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("int");
 
                     b.Property<string>("fizetesi_mod")
                         .IsRequired()

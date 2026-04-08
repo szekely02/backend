@@ -6,26 +6,28 @@ namespace GameStore.Mapping;
 
 public static class VasarlokMapping
 {
-        public static Vasarlok ToEntity(this createvasarlokDto vasarlo)
-        {
-            return new Vasarlok()
-            {
-                Nev = vasarlo.Nev,
-                Email = vasarlo.Email,
-                telefonszam = vasarlo.telefonszam,
-                szallitasi_cim = vasarlo.szallitasi_cim
-            };
-        }       
-
-    public static vasarlokdetailsDto TovasarlokDetailsDto(this Vasarlok vasarlo)
+    public static Vasarlok ToEntity(this createvasarlokDto vasarlo)
     {
-        return new vasarlokdetailsDto(
-            vasarlo.Nev,
-            vasarlo.Email,
-            vasarlo.telefonszam,
-            vasarlo.szallitasi_cim
-        );
-    }   
+        return new Vasarlok()
+        {
+           
+            Nev = vasarlo.Nev,
+            Email = vasarlo.Email,
+            telefonszam = vasarlo.telefonszam,
+            szallitasi_cim = vasarlo.szallitasi_cim
+        };
+    }
+
+    public static VasarlokDetailsDto ToVasarlokDetailsDto(this Vasarlok vasarlo)
+{
+    return new VasarlokDetailsDto(
+        vasarlo.Vasarlo_ID,
+        vasarlo.Nev,
+        vasarlo.Email,
+        vasarlo.telefonszam,
+        vasarlo.szallitasi_cim
+    );
+}
 
     public static Vasarlok ToEntity(this updatevasarlokDto vasarlo, int id)
     {

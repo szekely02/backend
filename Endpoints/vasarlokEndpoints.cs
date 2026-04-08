@@ -14,15 +14,18 @@ public static class vasarlokEndpoints
         //Get /vasarlok
         var group = app.MapGroup("vasarlok").WithParameterValidation();
         group.MapGet("/", async (netContext dbContext) =>
-         await dbContext.vasarlok.Select(vasarlo => vasarlo.TovasarlokDetailsDto())
+         await dbContext.vasarlok.Select(vasarlo => vasarlo.ToVasarlokDetailsDto())
                         .AsNoTracking().ToListAsync());
+
+
         // Get /vasarlok/1
         group.MapGet("/{id}", async (int id, netContext dbContext) =>
         {
             Vasarlok? vasarlo = await dbContext.vasarlok.FindAsync(id);
 
-            return vasarlo is null ? Results.NotFound() : Results.Ok(vasarlo.TovasarlokDetailsDto());
+            return vasarlo is null ? Results.NotFound() : Results.Ok(vasarlo.ToVasarlokDetailsDto());
         });
+        
 
         //Post /vasarlok
         group.MapPost("/", async (createvasarlokDto newVasarlok, netContext dbContext) =>
@@ -32,7 +35,7 @@ public static class vasarlokEndpoints
             dbContext.vasarlok.Add(vasarlo);
             await dbContext.SaveChangesAsync();
 
-            return Results.CreatedAtRoute(GetVasarlokEndpointName, new { id = vasarlo.Vasarlo_ID }, vasarlo.TovasarlokDetailsDto());
+            return Results.CreatedAtRoute(GetVasarlokEndpointName, new { id = vasarlo.Vasarlo_ID }, vasarlo.ToVasarlokDetailsDto());
         });
 
         // Put /vasarlok/1

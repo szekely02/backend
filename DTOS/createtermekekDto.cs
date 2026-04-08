@@ -9,8 +9,8 @@ public record class createtermekekDto(
     [Required]string Mufaj,
     DateTime megjelenesi_datum,
     [Required]string korhatar_besorolas,
-    int leiras,
-    decimal ar,
-    decimal akcios_ar,
+    string leiras,
+    int ar,
+    int akcios_ar,
     int Raktarkeszlet
 );

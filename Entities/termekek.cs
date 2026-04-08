@@ -11,8 +11,8 @@ public class Termekek
     public string Mufaj { get; set; }
     public DateTime megjelenesi_datum { get; set; }
     public string korhatar_besorolas { get; set; }
-    public int leiras { get; set; }
-    public decimal ar { get; set; }
-    public decimal akcios_ar { get; set; }
+    public string leiras { get; set; }
+    public int ar { get; set; }
+    public int akcios_ar { get; set; }
     public int Raktarkeszlet { get; set; }
 }
