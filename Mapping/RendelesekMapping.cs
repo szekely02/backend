@@ -12,6 +12,7 @@ public static class RendelesekMapping
         {
             Vasarlo_ID = rendeles.Vasarlo_ID,
             termek_ID = rendeles.termek_ID,
+            Darabszam = rendeles.Darabszam,
             Rendeles_datuma = rendeles.Rendeles_datuma,
             fizetesi_mod = rendeles.fizetesi_mod,
             szallitasi_mod = rendeles.szallitasi_mod
@@ -26,6 +27,7 @@ public static class RendelesekMapping
             Rendelesek_ID = id,
             Vasarlo_ID = rendeles.Vasarlo_ID,
             termek_ID = rendeles.termek_ID,
+            Darabszam = rendeles.Darabszam,
             Rendeles_datuma = rendeles.Rendeles_datuma,
             fizetesi_mod = rendeles.fizetesi_mod,
             szallitasi_mod = rendeles.szallitasi_mod
@@ -40,6 +42,7 @@ public static class RendelesekMapping
             Rendelesek_ID = rendeles.Rendelesek_ID,
             Vasarlo_ID = rendeles.Vasarlo_ID,
             termek_ID = rendeles.termek_ID,
+            Darabszam = rendeles.Darabszam,
             Rendeles_datuma = rendeles.Rendeles_datuma,
             fizetesi_mod = rendeles.fizetesi_mod,
             szallitasi_mod = rendeles.szallitasi_mod

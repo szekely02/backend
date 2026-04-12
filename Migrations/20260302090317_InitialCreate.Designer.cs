@@ -40,6 +40,9 @@ namespace GameStore.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
+                    b.Property<int>("Darabszam")
+                        .HasColumnType("int");
+
                     b.Property<string>("fizetesi_mod")
                         .IsRequired()
                         .HasColumnType("longtext");

@@ -3,7 +3,6 @@ using GameStore.DTOS;
 using GameStore.Entities;
 using GameStore.Mapping;
 using Microsoft.EntityFrameworkCore;
-
 namespace GameStore.Endpoints;
 
 public static class rendelesekEndpoints

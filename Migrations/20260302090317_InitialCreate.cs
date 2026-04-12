@@ -23,6 +23,7 @@ namespace GameStore.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Vasarlo_ID = table.Column<int>(type: "int", nullable: false),
                     termek_ID = table.Column<int>(type: "int", nullable: false),
+                    Darabszam = table.Column<int>(type: "int", nullable: false),
                     
                     Rendeles_datuma = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     fizetesi_mod = table.Column<string>(type: "longtext", nullable: false)
