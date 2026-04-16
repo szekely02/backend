@@ -17,6 +17,6 @@ app.MapRendelesekEndpoints();
 app.MapTermekekEndpoints();
 app.MapVasarlokEndpoints();
 
-await app.MigrateDB();
+//await app.MigrateDB();
 
 app.Run();
