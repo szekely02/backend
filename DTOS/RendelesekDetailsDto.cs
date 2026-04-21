@@ -8,4 +8,4 @@ public record class rendelesekdetailsDto(
     DateTime Rendeles_datuma,
     string fizetesi_mod,
     string szallitasi_mod
-);//szia csizi
+);
